@@ -1,0 +1,35 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+     
+    margin-left: 2em;
+    margin-right: 2em;
+    padding: 1em;
+}
+.navbar .logo{
+    font-size: 20px; 
+}
+.navbar .logo span{
+    font-size: 25px;
+    
+}
+.navbar .links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    font-size: 13px;
+    text-transform: lowercase;
+    
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .navbar .logo .logoTitle{
+        color: white !important;
+        z-index: 99;
+    }
+
+}
+

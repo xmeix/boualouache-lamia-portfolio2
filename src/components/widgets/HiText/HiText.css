@@ -1,0 +1,85 @@
+.hiText {
+  position: absolute;
+  top: 25vh;
+  left: 50%; 
+  max-width: 400px;
+   
+  color: var(--white);
+  padding: 2em;
+}
+
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+.hiText .hi {
+  font-size: 15px;
+  
+
+  font-weight: 700;
+  color: var(--yellow);
+  animation: 2s anim-lineUp ease-out;
+}
+
+
+.hiText .who {
+  font-size: 40px; 
+  font-weight: 900;
+  
+}
+.hiText .what {
+  /* text-align: right !important; */
+  text-align: justify;  
+  letter-spacing: 1px;
+  font-weight: 500;
+  transition: all 1s ease-in-out;
+  /* padding-left: 1em;
+  padding-right: 2em; */
+  font-size: 13px;
+   
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+@media screen and (max-width: 800px) {
+
+    .hiText{
+        padding: 1em;
+        position: initial;
+        margin-top: 7em;
+        width: 450px;
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start;
+        /* border: solid 1px black; */
+    }
+     .hiText .what{
+      /*text-align: left !important; */ 
+      transition: all 1s ease-in-out;
+      padding: 0;
+    }
+}

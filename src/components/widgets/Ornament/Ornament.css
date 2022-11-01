@@ -1,0 +1,12 @@
+.ornament{
+    position: absolute;
+    
+    z-index: 3;
+}
+
+
+@media screen and (min-width: 600px) {
+
+    
+
+}
