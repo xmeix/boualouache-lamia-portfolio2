@@ -5,8 +5,11 @@
 }
 
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 800px) {
 
-    
+    .ornament{
+        width: 15vw !important;
+        top: 25vh !important;
+    }
 
 }
