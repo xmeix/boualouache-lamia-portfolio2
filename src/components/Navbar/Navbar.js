@@ -64,11 +64,11 @@ const Navbar = () => {
             </div>
             {responsive && !show && <MenuRoundedIcon className='menu'  onClick={handleShowMenu}/>}
             {responsive && show && <CloseRoundedIcon className='menu'  onClick={handleShowMenu}/>}
-            <div className="links" style={{ display: !responsive ? "flex" : show ? "flex" : "none"}}>
-                {
-                    sideNavItems.map((item) => <Link key={item.id} smooth to={item.to} style={{ textDecoration: "none", color: responsive ? "var(--violet)" :"var(--white)",fontWeight: "600"}}>{item.title}</Link>)
-                }
-                </div>
+                <div className="links" style={{ display: !responsive ? "flex" : show ? "flex" : "none"}}>
+                    {
+                        sideNavItems.map((item) => <Link key={item.id} smooth to={item.to} style={{ textDecoration: "none", color: responsive ? "var(--violet)" :"var(--white)",fontWeight: "600"}}>{item.title}</Link>)
+                    }
+                    </div>
         </div>
      );
 }

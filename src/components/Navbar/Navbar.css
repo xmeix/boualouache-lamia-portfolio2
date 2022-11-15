@@ -58,3 +58,9 @@
         transition: all 2s ease-in;
     }
 }
+
+@media screen and (max-width: 320px){
+    .navbar .links{
+        padding: 1em;
+    }
+}
